@@ -1,0 +1,28 @@
+# Environment and sensitive keys
+.env
+*.pem
+dogkey.pem
+
+# Python & virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+
+# Audio, data, and temp recordings
+*.wav
+*.mp3
+*.flac
+*.m4a
+*.ogg
+outputs/
+tmp_uploads/
+data/
+
+# Trained models and binary artifacts
+*.joblib
+*.tflite
+*.keras
+models_trained/
