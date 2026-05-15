@@ -1,0 +1,15 @@
+gunicorn
+flask
+werkzeug
+numpy
+scikit-learn
+xgboost
+joblib
+waitress
+openai
+websockets
+edge-tts
+requests
+streamlit
+pytest
+python-dotenv
