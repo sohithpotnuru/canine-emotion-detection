@@ -1,0 +1,22 @@
+# Everything needed to run ONLY the voice assistant (server + mic client).
+# Install with: pip install -r requirements-voice-assistant.txt
+
+# --- Server (voice_assistant_server.py) ---
+flask
+werkzeug
+waitress
+openai          # used to call Groq's OpenAI-compatible API (STT + LLM)
+edge-tts        # free text-to-speech, no API key needed
+websockets      # optional: only used to read live dog state from bridge_server.py
+requests
+python-dotenv   # loads GROQ_API_KEY from a .env file automatically
+
+# --- Client (wake_word_listener.py) ---
+sounddevice     # microphone capture (needs PortAudio installed on the OS)
+numpy
+
+# --- Optional: bridge_server.py (dog-collar telemetry, NOT required for
+# the voice assistant to work on its own) ---
+# paho-mqtt
+# librosa
+# soundfile
